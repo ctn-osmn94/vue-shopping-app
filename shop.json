@@ -1,0 +1,32 @@
+[
+    {
+     "name": "shoes",
+     "price": 2,
+     "id": "1",
+     "image": "/images.jpg"
+    },
+    {
+     "name": "socks",
+     "price": 12,
+     "id": "2",
+     "image": "/images.jpg"
+    },
+    {
+     "name": "shirt",
+     "price": 77,
+     "id": "3",
+     "image": "/images.jpg"
+    },
+    {
+     "name": "watch",
+     "price": 88,
+     "id": "4",
+     "image": "/images.jpg"
+    },
+    {
+     "name": "phone",
+     "price": 64,
+     "id": "5",
+     "image": "/images.jpg"
+    }
+]
