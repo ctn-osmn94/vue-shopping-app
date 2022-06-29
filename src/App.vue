@@ -34,18 +34,16 @@ function deleteItem(index) {
 }
 deleteItem()
 
-
-
 </script>
 
 <template>
-    <div class="container mx-auto flex gap-10 py-16">
+    <div class="container mx-auto flex gap-10 py-16 items-center justify-center">
         <div 
-        class="flex flex-col gap-10"
+        class="flex flex-col gap-10 bg-slate-300 p-5 rounded-lg"
         v-for="(item) in shopList"
         :key="item.id"
         >
-            <img class="w-full rounded-lg" :src="item.image" alt="">
+            <div class="rounded-lg w-full"><img class="w-96 h-60" :src="item.image" alt=""></div>
             <div class="flex items-center justify-between">
                 <p class="text-xl font-semibold"> {{item.name}} </p>
                 <p class="text-xl font-semibold"> {{item.price}} $ </p>
@@ -59,8 +57,9 @@ deleteItem()
         <h1 class="font-bold text-2xl mb-8">BASKET</h1>
         <div class="flex flex-col gap-5">
             
-            <div class="flex gap-3 items-center" v-for="(item,index) in Basket"
+            <div class="flex gap-3 items-center bg-slate-300 p-3 w-60 rounded-lg" v-for="(item,index) in Basket"
             :key="item.id" >
+                <img class="w-10 h-10" :src="item.image" alt="">
                 <p> {{item.name}} </p>
                 <p> {{item.price}} $ </p>
                 <i @click="deleteItem(index)" class="fa-solid fa-trash-can cursor-pointer"></i>
