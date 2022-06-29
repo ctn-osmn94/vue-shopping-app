@@ -47,13 +47,13 @@ deleteItem()
             <div class="flex items-center justify-between">
                 <p class="text-xl font-semibold"> {{item.name}} </p>
                 <p class="text-xl font-semibold"> {{item.price}} $ </p>
-                <button class="p-3 bg-green-200 rounded-md" @click="addBasket(item)">basket
+                <button class="p-3 bg-green-200 rounded-md" @click="addBasket(item)">add basket
                 
                 </button>
             </div>
         </div>
     </div>
-    <div class="container mx-auto ">
+    <div class="container mx-auto" v-if="amount > 0">
         <h1 class="font-bold text-2xl mb-8">BASKET</h1>
         <div class="flex flex-col gap-5">
             
